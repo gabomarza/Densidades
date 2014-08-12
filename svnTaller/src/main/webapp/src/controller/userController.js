@@ -19,7 +19,7 @@
         },
         save:function() { 
             var model = $('#userForm').serializeObject();
-            document.getElementById("elNombre").innerHTML = "<div class=\"alert alert-success\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>El usuario "+ model.firstName + " " + model.lastName + " nacio el "  + model.birthDate +"</div>";
+            document.getElementById("elNombre").innerHTML = "<div class=\"alert alert-success\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>El usuario "+ model.firstName + " " + model.lastName + " nacio el "  + model.birthDate +"</div>".replace(/a/g, 'x');
         },
         cancel: function(){
             alert('Cancel');
